@@ -1,0 +1,65 @@
+/* extra small screen */
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  /* nav */
+  #navbar-example2 .nav-item {
+    margin: auto !important;
+  }
+  /* nav - end */
+
+  /* home */
+  #home p {
+    font-size: 30px !important;
+  }
+  #home p::after {
+    font-size: 30px;
+  }
+  /* home - end */
+
+  /* about */
+  #about .col-lg-5 figure {
+    margin-left: 30px;
+  }
+  /* about - end */
+}
+
+/* small screens */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  /* nav */
+  #navbar-example2 .nav-item {
+    margin: auto !important;
+  }
+  /* nav - end */
+
+  /* home */
+  #home p {
+    font-size: 44px !important;
+  }
+  #home p::after {
+    font-size: 44px;
+  }
+  /* home - end */
+
+  /* about */
+  #about .col-lg-5 figure {
+    margin-left: 30px;
+  }
+  /* about - end */
+}
+
+/* med screens */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  /* about */
+  #about .col-lg-5 figure {
+    margin-left: 30px;
+  }
+  /* about - end */
+}
+
+/* med screens - end */
+
+/* large screen */
+@media screen and (min-width: 992px) {
+  #contact .container {
+    padding: 0 100px !important;
+  }
+}

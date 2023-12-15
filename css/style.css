@@ -1,0 +1,693 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 70px;
+}
+:root {
+  --darkcolor: #343434;
+}
+
+section {
+  padding: 100px 0px;
+}
+a {
+  text-decoration: none;
+}
+h3 {
+  font-family: primarybold;
+  color: var(--darkcolor);
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: primarybold;
+  src: url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: primarylight;
+  src: url(../fonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+@font-face {
+  font-family: primaryreg;
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: secondaryreg;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* GENERAL - END */
+
+/* NAV */
+#navbar-example2 .navbar-brand {
+  font-family: primarybold;
+  color: #1c1c1c;
+}
+
+#navbar-example2 .nav-item {
+  margin: 0px 15px;
+  font-size: 14px;
+  font-family: secondaryreg;
+}
+#navbar-example2 .nav-item a {
+  color: #111111;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  left: 20%;
+  bottom: 5px;
+  transition: all 0.5s;
+}
+
+.active.nav-link::before {
+  width: 60%;
+}
+
+
+/* END - NAV */
+
+/* HOME */
+#home {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+#home h5 {
+  font-family: primarybold;
+  font-size: 50px;
+  color: white;
+}
+
+#home p {
+  font-family: primarylight;
+  font-size: 60px;
+  color: white;
+}
+#home p::after {
+  content: " |";
+  animation: typing 4s infinite;
+  font-family: primaryreg;
+}
+
+@keyframes typing {
+  0% {
+    content: "  L|";
+  }
+  1% {
+    content: "  La|";
+  }
+  2% {
+    content: "  Lar|";
+  }
+  3% {
+    content: "  Larr|";
+  }
+  4% {
+    content: " Larry|";
+  }
+  5% {
+    content: " Larry D|";
+  }
+  6% {
+    content: " Larry Da|";
+  }
+  7% {
+    content: " Larry Dan|";
+  }
+  8% {
+    content: " Larry Dani|";
+  }
+  9% {
+    content: " Larry Danie|";
+  }
+  10% {
+    content: " Larry Daniel|";
+  }
+  11% {
+    content: " Larry Daniels|";
+  }
+  12% {
+    content: " Larry Daniels|";
+  }
+  13% {
+    content: " Larry Daniels|";
+  }
+  14% {
+    content: " Larry Daniels|";
+  }
+  15% {
+    content: " Larry Daniels|";
+  }
+  16% {
+    content: " Larry Daniels|";
+  }
+  17% {
+    content: " Larry Daniels|";
+  }
+  18% {
+    content: " Larry Daniels|";
+  }
+  19% {
+    content: " Larry Daniels|";
+  }
+  20% {
+    content: " Larry Daniels|";
+  }
+
+  21% {
+    content: " Larry Daniel|";
+  }
+  22% {
+    content: " Larry Danie|";
+  }
+  23% {
+    content: " Larry Dani|";
+  }
+  24% {
+    content: " Larry Dan|";
+  }
+  25% {
+    content: " Larry Da|";
+  }
+  26% {
+    content: " Larry D|";
+  }
+  27% {
+    content: " Larry|";
+  }
+  28% {
+    content: " Larr|";
+  }
+  29% {
+    content: " Lar|";
+  }
+  30% {
+    content: " La|";
+  }
+  31% {
+    content: " L|";
+  }
+  32% {
+    content: " |";
+  }
+  33% {
+    content: " D|";
+  }
+  34% {
+    content: " De|";
+  }
+  35% {
+    content: " Dev|";
+  }
+  36% {
+    content: " Deve|";
+  }
+  37% {
+    content: " Devel|";
+  }
+  38% {
+    content: " Develo| ";
+  }
+  39% {
+    content: " Develop|";
+  }
+  40% {
+    content: " Develope|";
+  }
+  41% {
+    content: " Developer|";
+  }
+  42% {
+    content: " Developer|";
+  }
+  43% {
+    content: " Developer|";
+  }
+  44% {
+    content: " Developer|";
+  }
+  45% {
+    content: " Developer|";
+  }
+  46% {
+    content: " Developer|";
+  }
+  47% {
+    content: " Developer|";
+  }
+  48% {
+    content: " Developer|";
+  }
+  49% {
+    content: " Developer|";
+  }
+  50% {
+    content: " Developer|";
+  }
+  51% {
+    content: " Develope|";
+  }
+  52% {
+    content: " Develop|";
+  }
+  53% {
+    content: " Develo|";
+  }
+  54% {
+    content: " Devel|";
+  }
+  55% {
+    content: " Deve|";
+  }
+  56% {
+    content: " Dev|";
+  }
+  57% {
+    content: " De|";
+  }
+  58% {
+    content: " D|";
+  }
+  59% {
+    content: " |";
+  }
+  60% {
+    content: " D|";
+  }
+  61% {
+    content: " De|";
+  }
+  62% {
+    content: " Des|";
+  }
+  63% {
+    content: " Desi|";
+  }
+  64% {
+    content: " Desig|";
+  }
+  65% {
+    content: " Design|";
+  }
+  66% {
+    content: " Designe|";
+  }
+  67% {
+    content: " Designer|";
+  }
+  68% {
+    content: " Designer|";
+  }
+  69% {
+    content: " Designer|";
+  }
+  70% {
+    content: " Designer|";
+  }
+  71% {
+    content: " Designer|";
+  }
+  72% {
+    content: " Designer|";
+  }
+  73% {
+    content: " Designer|";
+  }
+  74% {
+    content: " Designer|";
+  }
+  75% {
+    content: " Designer|";
+  }
+  76% {
+    content: " Designer|";
+  }
+  77% {
+    content: " Designe|";
+  }
+  78% {
+    content: " Design|";
+  }
+  79% {
+    content: " Desig|";
+  }
+  80% {
+    content: " Desi|";
+  }
+  81% {
+    content: " Des|";
+  }
+  82% {
+    content: " De|";
+  }
+  83% {
+    content: " D|";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+#home .icon_circle {
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+}
+
+/* HOME - END */
+
+/* ABOUT */
+
+#about figure::before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-image: url(../img/dots.png);
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: -1;
+}
+#about p {
+  font-family: secondaryreg;
+  font-size: 14px;
+}
+
+#about .progress {
+  height: 25px;
+  box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.50);
+  font-family: primaryreg;
+  font-size: 13px;
+}
+
+#about [aria-valuenow="95%"] .progress-bar {
+  width: 95%;
+}
+#about [aria-valuenow="80%"] .progress-bar {
+  width: 80%;
+}
+#about [aria-valuenow="90%"] .progress-bar {
+  width: 90%;
+}
+#about .buttons span {
+  font-size: 13px;
+  font-family: secondaryreg;
+  color: #1c1c1c;
+  transition: all 0.5s;
+}
+
+#about .buttons .dark__btn:hover {
+  background-color: white !important;
+  color: black !important;
+}
+#about .buttons .light__btn:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* ABOUT - END */
+
+/* SERVICES */
+.section_header h3::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  background-image: url(../img/dots.png);
+  z-index: -1;
+}
+
+#services .fixed_circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: var(--darkcolor);
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+#services h6 {
+  font-family: primarybold;
+  color: var(--darkcolor);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#services p {
+  font-family: secondaryreg;
+  color: #748182;
+  font-size: 14px;
+}
+
+#services .item:hover .fixed_circle {
+  background-color: var(--darkcolor);
+  color: #f4f4f4;
+}
+
+/* SERVICES - end*/
+
+/* Portfolio */
+#works ul li button {
+  font-family: secondaryreg;
+  color: #222222;
+  font-weight: bold;
+}
+
+.layout {
+  width: 96%;
+  height: 96%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 2%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#works .item:hover .layout {
+  opacity: 1;
+}
+
+#works .fixed_circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #f4f4f4;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#works .fixed_circle:hover {
+  background-color: #f4f4f4;
+  color: var(--darkcolor);
+  border: solid 1px black;
+}
+
+#works h6 {
+  font-size: 12px;
+  font-family: primarybold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Portfolio - END*/
+
+/* Testimonials */
+#clinets .fixed_circle {
+  width: 90px;
+  height: 90px;
+}
+
+#clinets p {
+  font-family: secondaryreg;
+  color: #748182;
+  font-size: 15px;
+}
+#clinets h6 {
+  font-family: primarybold;
+  color: var(--darkcolor);
+}
+#clinets span {
+  font-family: secondaryreg;
+  font-size: 12px;
+}
+
+#clinets .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #748182;
+  border-radius: 100%;
+}
+#clinets .carousel-indicators button:hover {
+  background-color: black;
+}
+
+/* Testimonials - END */
+
+/* info */
+#info p {
+  font-family: secondaryreg;
+  color: #748182;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* info - end */
+
+/* our Team */
+#team h4,
+h5 {
+  font-family: primaryreg;
+}
+
+#team .layout {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 25%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#team .item:hover .layout {
+  opacity: 1;
+  transform: rotateY(180deg);
+  width: 96%;
+  height: 96%;
+  top: 2%;
+  left: 2%;
+}
+
+#team .fixed_circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #f4f4f4;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#team .fixed_circle:hover {
+  background-color: #f4f4f4;
+  color: var(--darkcolor);
+  border: solid 1px black;
+}
+#team img {
+  transition: all 1s;
+}
+
+#team figure:hover img{
+  transform: scale(1.3);
+
+}
+
+/* our Team - end */
+
+/* Contact */
+
+
+#contact .fixed_circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: var(--darkcolor);
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+#contact .item:hover .fixed_circle {
+  background-color: black;
+  color: #f4f4f4;
+  border: solid 1px black;
+}
+
+#contact h6 {
+  font-family: primarybold;
+}
+
+#contact p {
+  font-family: secondaryreg;
+  color: #748182;
+  font-size: 15px;
+}
+
+#contact input,
+textarea{
+  all: unset;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+#contact textarea {
+  resize: both;
+}
+
+#contact .dark__btn {
+  background-color: black;
+  color: #f4f4f4;
+  padding: 10px 40px;
+  margin-left: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#contact .dark__btn:hover {
+  background-color: white;
+  color: var(--darkcolor)!important;
+}
+
+/* Contact - END */
+
+/* footer */
+#footer{
+  background-color: #1c1c1c;
+  font-family:secondaryreg ;
+  color: #748182;
+  text-align: center;
+  font-size: 13px;
+  padding: 30px;
+}
+/* footer - end */
+
